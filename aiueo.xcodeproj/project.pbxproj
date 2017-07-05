@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B21D33761F03BD8000146945 /* MonthCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21D33751F03BD8000146945 /* MonthCollectionViewCell.swift */; };
+		B21D33781F03C13100146945 /* YearCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21D33771F03C13100146945 /* YearCollectionViewCell.swift */; };
+		B21D337A1F03C6D800146945 /* DayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21D33791F03C6D800146945 /* DayTableViewCell.swift */; };
+		B26304831EF1520A007CED22 /* StampViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26304821EF1520A007CED22 /* StampViewController.swift */; };
+		B26304851EF15223007CED22 /* StampnameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26304841EF15223007CED22 /* StampnameViewController.swift */; };
+		B26304871EF15235007CED22 /* DayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26304861EF15235007CED22 /* DayViewController.swift */; };
+		B26304891EF15240007CED22 /* MonthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26304881EF15240007CED22 /* MonthViewController.swift */; };
+		B263048B1EF15249007CED22 /* YearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B263048A1EF15249007CED22 /* YearViewController.swift */; };
 		B2BF4B3D1EF14679002FC00C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BF4B3C1EF14679002FC00C /* AppDelegate.swift */; };
 		B2BF4B3F1EF14679002FC00C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BF4B3E1EF14679002FC00C /* ViewController.swift */; };
 		B2BF4B421EF14679002FC00C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2BF4B401EF14679002FC00C /* Main.storyboard */; };
@@ -14,6 +22,7 @@
 		B2BF4B471EF14679002FC00C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2BF4B451EF14679002FC00C /* LaunchScreen.storyboard */; };
 		B2BF4B521EF14679002FC00C /* aiueoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BF4B511EF14679002FC00C /* aiueoTests.swift */; };
 		B2BF4B5D1EF14679002FC00C /* aiueoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BF4B5C1EF14679002FC00C /* aiueoUITests.swift */; };
+		B2BF4B6B1EF14B66002FC00C /* EditViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2BF4B6A1EF14B66002FC00C /* EditViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B21D33751F03BD8000146945 /* MonthCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthCollectionViewCell.swift; sourceTree = "<group>"; };
+		B21D33771F03C13100146945 /* YearCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearCollectionViewCell.swift; sourceTree = "<group>"; };
+		B21D33791F03C6D800146945 /* DayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayTableViewCell.swift; sourceTree = "<group>"; };
+		B26304821EF1520A007CED22 /* StampViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StampViewController.swift; sourceTree = "<group>"; };
+		B26304841EF15223007CED22 /* StampnameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StampnameViewController.swift; sourceTree = "<group>"; };
+		B26304861EF15235007CED22 /* DayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayViewController.swift; sourceTree = "<group>"; };
+		B26304881EF15240007CED22 /* MonthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthViewController.swift; sourceTree = "<group>"; };
+		B263048A1EF15249007CED22 /* YearViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearViewController.swift; sourceTree = "<group>"; };
 		B2BF4B391EF14679002FC00C /* aiueo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aiueo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BF4B3C1EF14679002FC00C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2BF4B3E1EF14679002FC00C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +64,7 @@
 		B2BF4B581EF14679002FC00C /* aiueoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = aiueoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BF4B5C1EF14679002FC00C /* aiueoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aiueoUITests.swift; sourceTree = "<group>"; };
 		B2BF4B5E1EF14679002FC00C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2BF4B6A1EF14B66002FC00C /* EditViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EditViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +118,15 @@
 				B2BF4B3C1EF14679002FC00C /* AppDelegate.swift */,
 				B2BF4B3E1EF14679002FC00C /* ViewController.swift */,
 				B2BF4B401EF14679002FC00C /* Main.storyboard */,
+				B26304861EF15235007CED22 /* DayViewController.swift */,
+				B21D33791F03C6D800146945 /* DayTableViewCell.swift */,
+				B26304881EF15240007CED22 /* MonthViewController.swift */,
+				B21D33751F03BD8000146945 /* MonthCollectionViewCell.swift */,
+				B263048A1EF15249007CED22 /* YearViewController.swift */,
+				B21D33771F03C13100146945 /* YearCollectionViewCell.swift */,
+				B2BF4B6A1EF14B66002FC00C /* EditViewController.storyboard */,
+				B26304841EF15223007CED22 /* StampnameViewController.swift */,
+				B26304821EF1520A007CED22 /* StampViewController.swift */,
 				B2BF4B431EF14679002FC00C /* Assets.xcassets */,
 				B2BF4B451EF14679002FC00C /* LaunchScreen.storyboard */,
 				B2BF4B481EF14679002FC00C /* Info.plist */,
@@ -236,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2BF4B471EF14679002FC00C /* LaunchScreen.storyboard in Resources */,
+				B2BF4B6B1EF14B66002FC00C /* EditViewController.storyboard in Resources */,
 				B2BF4B441EF14679002FC00C /* Assets.xcassets in Resources */,
 				B2BF4B421EF14679002FC00C /* Main.storyboard in Resources */,
 			);
@@ -262,8 +290,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B26304831EF1520A007CED22 /* StampViewController.swift in Sources */,
+				B26304871EF15235007CED22 /* DayViewController.swift in Sources */,
+				B21D337A1F03C6D800146945 /* DayTableViewCell.swift in Sources */,
+				B263048B1EF15249007CED22 /* YearViewController.swift in Sources */,
+				B26304851EF15223007CED22 /* StampnameViewController.swift in Sources */,
 				B2BF4B3F1EF14679002FC00C /* ViewController.swift in Sources */,
+				B21D33761F03BD8000146945 /* MonthCollectionViewCell.swift in Sources */,
 				B2BF4B3D1EF14679002FC00C /* AppDelegate.swift in Sources */,
+				B21D33781F03C13100146945 /* YearCollectionViewCell.swift in Sources */,
+				B26304891EF15240007CED22 /* MonthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +453,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DAYR4G67YX;
 				INFOPLIST_FILE = aiueo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.aiueo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -430,6 +467,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DAYR4G67YX;
 				INFOPLIST_FILE = aiueo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.aiueo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -514,6 +552,7 @@
 				B2BF4B631EF14679002FC00C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2BF4B641EF14679002FC00C /* Build configuration list for PBXNativeTarget "aiueoTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +561,7 @@
 				B2BF4B661EF14679002FC00C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2BF4B671EF14679002FC00C /* Build configuration list for PBXNativeTarget "aiueoUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +570,7 @@
 				B2BF4B691EF14679002FC00C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
