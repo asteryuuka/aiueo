@@ -8,13 +8,18 @@
 
 import UIKit
 
-class StampnameViewController: UIViewController {
-
+class StampnameViewController: UIViewController{
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -22,6 +27,7 @@ class StampnameViewController: UIViewController {
     }
     
 
+    
     /*
     // MARK: - Navigation
 

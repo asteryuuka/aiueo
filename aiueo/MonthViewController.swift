@@ -17,7 +17,6 @@ class MonthViewController: UIViewController,UICollectionViewDelegate, UICollecti
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView.dataSource = self
         // Do any additional setup after loading the view.
        
         collectionView.delegate = self

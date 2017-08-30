@@ -39,13 +39,17 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="PXw-wR-uqi">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StampCollectionCell" id="PXw-wR-uqi" customClass="StampCollectionViewCell" customModule="aiueo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </view>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="msI-3q-aCF" kind="show" id="pTe-li-WZ0"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -54,6 +58,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Mgh-dl-wBA"/>
                     <connections>
+                        <outlet property="collectionView" destination="eIB-DI-wNQ" id="Miv-d9-kqU"/>
                         <segue destination="msI-3q-aCF" kind="show" id="Zk5-QA-N72"/>
                     </connections>
                 </viewController>
@@ -103,6 +108,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rpt-IM-ybf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -127,4 +134,7 @@
             <point key="canvasLocation" x="-423.19999999999999" y="27.436281859070466"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="pTe-li-WZ0"/>
+    </inferredMetricsTieBreakers>
 </document>

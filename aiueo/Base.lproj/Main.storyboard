@@ -78,7 +78,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="rX2-Ry-0eu"/>
+                    <navigationItem key="navigationItem" id="rX2-Ry-0eu">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="uaU-k3-BGp">
+                            <connections>
+                                <action selector="presentEdit" destination="BYZ-38-t0r" id="k7A-gd-Yjv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="table" destination="TaO-c5-aIa" id="T6U-nU-Bni"/>
                     </connections>
@@ -310,7 +316,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="l1S-D5-u6i"/>
+        <segue reference="DFU-5G-fbM"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>

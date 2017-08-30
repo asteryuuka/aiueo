@@ -10,6 +10,7 @@
 		B21D33761F03BD8000146945 /* MonthCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21D33751F03BD8000146945 /* MonthCollectionViewCell.swift */; };
 		B21D33781F03C13100146945 /* YearCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21D33771F03C13100146945 /* YearCollectionViewCell.swift */; };
 		B21D337A1F03C6D800146945 /* DayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21D33791F03C6D800146945 /* DayTableViewCell.swift */; };
+		B23F47761F56C1F400DF572F /* StampCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23F47751F56C1F400DF572F /* StampCollectionViewCell.swift */; };
 		B26304831EF1520A007CED22 /* StampViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26304821EF1520A007CED22 /* StampViewController.swift */; };
 		B26304851EF15223007CED22 /* StampnameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26304841EF15223007CED22 /* StampnameViewController.swift */; };
 		B26304871EF15235007CED22 /* DayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26304861EF15235007CED22 /* DayViewController.swift */; };
@@ -22,7 +23,7 @@
 		B2BF4B471EF14679002FC00C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2BF4B451EF14679002FC00C /* LaunchScreen.storyboard */; };
 		B2BF4B521EF14679002FC00C /* aiueoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BF4B511EF14679002FC00C /* aiueoTests.swift */; };
 		B2BF4B5D1EF14679002FC00C /* aiueoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BF4B5C1EF14679002FC00C /* aiueoUITests.swift */; };
-		B2BF4B6B1EF14B66002FC00C /* EditViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2BF4B6A1EF14B66002FC00C /* EditViewController.storyboard */; };
+		B2BF4B6B1EF14B66002FC00C /* Edit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2BF4B6A1EF14B66002FC00C /* Edit.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		B21D33751F03BD8000146945 /* MonthCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthCollectionViewCell.swift; sourceTree = "<group>"; };
 		B21D33771F03C13100146945 /* YearCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearCollectionViewCell.swift; sourceTree = "<group>"; };
 		B21D33791F03C6D800146945 /* DayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayTableViewCell.swift; sourceTree = "<group>"; };
+		B23F47751F56C1F400DF572F /* StampCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StampCollectionViewCell.swift; path = ../StampCollectionViewCell.swift; sourceTree = "<group>"; };
 		B26304821EF1520A007CED22 /* StampViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StampViewController.swift; sourceTree = "<group>"; };
 		B26304841EF15223007CED22 /* StampnameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StampnameViewController.swift; sourceTree = "<group>"; };
 		B26304861EF15235007CED22 /* DayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayViewController.swift; sourceTree = "<group>"; };
@@ -64,7 +66,7 @@
 		B2BF4B581EF14679002FC00C /* aiueoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = aiueoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BF4B5C1EF14679002FC00C /* aiueoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aiueoUITests.swift; sourceTree = "<group>"; };
 		B2BF4B5E1EF14679002FC00C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B2BF4B6A1EF14B66002FC00C /* EditViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EditViewController.storyboard; sourceTree = "<group>"; };
+		B2BF4B6A1EF14B66002FC00C /* Edit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Edit.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,8 +126,9 @@
 				B21D33751F03BD8000146945 /* MonthCollectionViewCell.swift */,
 				B263048A1EF15249007CED22 /* YearViewController.swift */,
 				B21D33771F03C13100146945 /* YearCollectionViewCell.swift */,
-				B2BF4B6A1EF14B66002FC00C /* EditViewController.storyboard */,
+				B2BF4B6A1EF14B66002FC00C /* Edit.storyboard */,
 				B26304841EF15223007CED22 /* StampnameViewController.swift */,
+				B23F47751F56C1F400DF572F /* StampCollectionViewCell.swift */,
 				B26304821EF1520A007CED22 /* StampViewController.swift */,
 				B2BF4B431EF14679002FC00C /* Assets.xcassets */,
 				B2BF4B451EF14679002FC00C /* LaunchScreen.storyboard */,
@@ -263,7 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2BF4B471EF14679002FC00C /* LaunchScreen.storyboard in Resources */,
-				B2BF4B6B1EF14B66002FC00C /* EditViewController.storyboard in Resources */,
+				B2BF4B6B1EF14B66002FC00C /* Edit.storyboard in Resources */,
 				B2BF4B441EF14679002FC00C /* Assets.xcassets in Resources */,
 				B2BF4B421EF14679002FC00C /* Main.storyboard in Resources */,
 			);
@@ -292,6 +295,7 @@
 			files = (
 				B26304831EF1520A007CED22 /* StampViewController.swift in Sources */,
 				B26304871EF15235007CED22 /* DayViewController.swift in Sources */,
+				B23F47761F56C1F400DF572F /* StampCollectionViewCell.swift in Sources */,
 				B21D337A1F03C6D800146945 /* DayTableViewCell.swift in Sources */,
 				B263048B1EF15249007CED22 /* YearViewController.swift in Sources */,
 				B26304851EF15223007CED22 /* StampnameViewController.swift in Sources */,

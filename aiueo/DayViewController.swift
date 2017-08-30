@@ -46,6 +46,11 @@ class DayViewController: UIViewController, UITableViewDataSource {
         
     }
     
+    @IBAction func presentEdit() {
+        let controller = StampViewController.instantiate()
+        self.present(controller, animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

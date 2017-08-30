@@ -8,15 +8,37 @@
 
 import UIKit
 
-class StampViewController: UIViewController {
+class StampViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
 
-    @IBOutlet var label: UILabel!
-    @IBOutlet var imageView: UIImageView!
+    static func instantiate() -> UINavigationController {
+        let controller = UIStoryboard(name: "Edit", bundle: nil).instantiateInitialViewController()
+        as! UINavigationController
+        
+        return controller
+    }
+    
+    @IBOutlet var collectionView:UICollectionView!
+    
+    fileprivate let cellMargin: CGFloat = 9.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        collectionView.delegate = self
+        collectionView.dataSource = self
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,6 +46,30 @@ class StampViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StampCollectionCell", for: indexPath) as! StampCollectionViewCell
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let numberOfMargin: CGFloat = 8.0
+        let width: CGFloat = (collectionView.frame.size.width - cellMargin * numberOfMargin) / 7
+        let height: CGFloat = width
+        return CGSize(width: width, height: height)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        
+        return cellMargin
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        
+        return cellMargin
+    }
+
 
     /*
     // MARK: - Navigation
