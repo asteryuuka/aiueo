@@ -10,6 +10,7 @@ import UIKit
 
 class YearViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
+    //varは変数で中の文字を変えられる。letは定数で1回文字を入れるとそれは変わらない
     @IBOutlet var collectionView:UICollectionView!
     
     fileprivate let cellMargin: CGFloat = 15.0

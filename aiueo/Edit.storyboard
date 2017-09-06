@@ -45,10 +45,16 @@
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4CC-tD-lrV">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
                                         </view>
                                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                                         <connections>
-                                            <segue destination="msI-3q-aCF" kind="show" id="pTe-li-WZ0"/>
+                                            <outlet property="stampImageView" destination="4CC-tD-lrV" id="IDh-Xy-p8X"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -56,10 +62,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Mgh-dl-wBA"/>
+                    <navigationItem key="navigationItem" id="Mgh-dl-wBA">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="qR0-pG-amI">
+                            <connections>
+                                <action selector="Back" destination="U5w-aa-MGQ" id="xjg-c7-fn2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="eIB-DI-wNQ" id="Miv-d9-kqU"/>
-                        <segue destination="msI-3q-aCF" kind="show" id="Zk5-QA-N72"/>
+                        <segue destination="msI-3q-aCF" kind="show" identifier="ToStampnameVIewController" id="Zk5-QA-N72"/>
+                        <segue destination="msI-3q-aCF" kind="show" id="FPK-Py-DUu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u6G-fF-TJu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -93,6 +106,9 @@
                                 <state key="normal" title="完成！">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="kansei" destination="msI-3q-aCF" eventType="touchUpInside" id="FVC-qD-XIM"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dCi-pF-giW">
                                 <rect key="frame" x="123" y="108" width="128" height="128"/>
@@ -110,6 +126,10 @@
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="imageView" destination="dCi-pF-giW" id="BSE-Os-aH3"/>
+                        <outlet property="textField" destination="QHj-jo-Tz7" id="L74-8K-soW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rpt-IM-ybf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -135,6 +155,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="pTe-li-WZ0"/>
+        <segue reference="Zk5-QA-N72"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>

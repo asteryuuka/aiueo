@@ -79,7 +79,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="rX2-Ry-0eu">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="uaU-k3-BGp">
+                        <barButtonItem key="rightBarButtonItem" title="編集" id="uaU-k3-BGp">
                             <connections>
                                 <action selector="presentEdit" destination="BYZ-38-t0r" id="k7A-gd-Yjv"/>
                             </connections>
@@ -112,7 +112,7 @@
                                     <constraint firstAttribute="height" constant="44" id="RY6-ra-keN"/>
                                 </constraints>
                                 <items>
-                                    <barButtonItem title="Week" width="112" id="l7e-cf-Ow6">
+                                    <barButtonItem title="Day" width="112" id="l7e-cf-Ow6">
                                         <connections>
                                             <action selector="Week" destination="B07-GY-d8y" id="2iw-ao-2sZ"/>
                                         </connections>
@@ -212,7 +212,7 @@
                                     <constraint firstAttribute="height" constant="44" id="VGC-lL-hRJ"/>
                                 </constraints>
                                 <items>
-                                    <barButtonItem title="Week" width="112" id="Gaj-XD-Xkb">
+                                    <barButtonItem title="Day" width="112" id="Gaj-XD-Xkb">
                                         <connections>
                                             <action selector="Week" destination="eVV-c6-uAt" id="kJT-Gn-W7T"/>
                                         </connections>

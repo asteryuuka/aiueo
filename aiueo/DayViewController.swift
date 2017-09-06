@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Floaty
 
 class DayViewController: UIViewController, UITableViewDataSource {
     
@@ -16,6 +17,12 @@ class DayViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         table.dataSource = self
         // Do any additional setup after loading the view.
+       
+        let floaty = Floaty()
+        floaty.paddingY = 55
+        floaty.addItem(title: "Hello, World!")
+        self.view.addSubview(floaty)
+        
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

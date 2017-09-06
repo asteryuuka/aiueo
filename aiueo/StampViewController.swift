@@ -17,8 +17,16 @@ class StampViewController: UIViewController,UICollectionViewDelegate,UICollectio
         return controller
     }
     
-    @IBOutlet var collectionView:UICollectionView!
+    @IBOutlet var collectionView: UICollectionView!
     
+    let imageNameArray:[String] = ["StampDemo.jpeg","StampDemo2.jpeg","StampDemo3.jpeg"]
+    
+    
+    @IBAction func Back() {
+        self.dismiss(animated: true, completion: nil)
+        
+    }
+
     fileprivate let cellMargin: CGFloat = 9.0
     
     override func viewDidLoad() {
@@ -38,7 +46,7 @@ class StampViewController: UIViewController,UICollectionViewDelegate,UICollectio
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return imageNameArray.count
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,6 +56,8 @@ class StampViewController: UIViewController,UICollectionViewDelegate,UICollectio
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StampCollectionCell", for: indexPath) as! StampCollectionViewCell
+        
+        cell.stampImageView.image = UIImage(named: imageNameArray[indexPath.row])
         
         return cell
     }
@@ -60,6 +70,10 @@ class StampViewController: UIViewController,UICollectionViewDelegate,UICollectio
         return CGSize(width: width, height: height)
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "ToStampnameVIewController", sender: imageNameArray[indexPath.row])
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         
         return cellMargin
@@ -68,6 +82,13 @@ class StampViewController: UIViewController,UICollectionViewDelegate,UICollectio
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         
         return cellMargin
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ToStampnameVIewController" {
+            let controller = segue.destination as! StampnameViewController
+            controller.imagename = sender as! String
+        }
     }
 
 

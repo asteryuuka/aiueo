@@ -9,5 +9,6 @@
 import UIKit
 
 class StampCollectionViewCell: UICollectionViewCell {
-    
+   
+    @IBOutlet var stampImageView: UIImageView!
 }
