@@ -70,6 +70,8 @@ class StampnameViewController: UIViewController{
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        imageView.image = UIImage(named: imagename)
     }
     
     
