@@ -1,0 +1,20 @@
+PODS:
+  - Floaty (3.0.0)
+  - Realm (2.7.0):
+    - Realm/Headers (= 2.7.0)
+  - Realm/Headers (2.7.0)
+  - RealmSwift (2.7.0):
+    - Realm (= 2.7.0)
+
+DEPENDENCIES:
+  - Floaty
+  - RealmSwift
+
+SPEC CHECKSUMS:
+  Floaty: d1be5d323094f0de422bb615452d00ba26ac74dd
+  Realm: 07e5d3a9e0e41d65fd5f9f05150ed6295d0f093b
+  RealmSwift: 6d06425d3900c86473c4f323bf6949b43fca22bc
+
+PODFILE CHECKSUM: 0a3ad0d877e8ff24d84814495ce57a0ac4ff9ada
+
+COCOAPODS: 1.2.1
