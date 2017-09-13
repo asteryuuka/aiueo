@@ -16,11 +16,16 @@ class StampnameViewController: UIViewController{
     
     var imagename: String!
     
+    
     @IBAction func kansei() {
         
+     
+      
+        
+        //何も名前をつけていない時にダメと表示する
         if textField.text == "" {
             //Alert
-            let alert = UIAlertController(title: "No", message: "名前を入力して下さい", preferredStyle: .alert)
+            let alert = UIAlertController(title: "保存できません", message: "名前を入力して下さい", preferredStyle: .alert)
             //OK
             alert.addAction(
                 UIAlertAction(title: "OK",
@@ -71,8 +76,10 @@ class StampnameViewController: UIViewController{
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        //imageViewの画像で選ばれたimagenameをUIImageに出す
         imageView.image = UIImage(named: imagename)
     }
+    
     
     
     override func didReceiveMemoryWarning() {
@@ -81,6 +88,7 @@ class StampnameViewController: UIViewController{
     }
     
     
+   
     
     /*
      // MARK: - Navigation

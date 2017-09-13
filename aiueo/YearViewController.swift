@@ -78,8 +78,10 @@ class YearViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     @IBAction func keisan() {
-        
+     
+    //月を選択したら選択したMonthに移動する
     }
+    
 
     /*
     // MARK: - Navigation

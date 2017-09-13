@@ -19,7 +19,7 @@ class StampViewController: UIViewController,UICollectionViewDelegate,UICollectio
     
     @IBOutlet var collectionView: UICollectionView!
     
-    let imageNameArray:[String] = ["StampDemo.jpeg","StampDemo2.jpeg","StampDemo3.jpeg"]
+    let imageNameArray:[String] = ["StampDemo.jpeg","StampDemo2.jpg","StampDemo3.jpeg"]
     
     
     @IBAction func Back() {
@@ -54,6 +54,7 @@ class StampViewController: UIViewController,UICollectionViewDelegate,UICollectio
         // Dispose of any resources that can be recreated.
     }
     
+   //StampCollectionCellにimageNameArrayに入れた画像が表示できるようにする
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StampCollectionCell", for: indexPath) as! StampCollectionViewCell
         
@@ -70,8 +71,9 @@ class StampViewController: UIViewController,UICollectionViewDelegate,UICollectio
         return CGSize(width: width, height: height)
     }
     
+   //Segueの名前をつけて一緒に移動するimageNameArrayも移動させる
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "ToStampnameVIewController", sender: imageNameArray[indexPath.row])
+        performSegue(withIdentifier: "ToStampnameViewController", sender: imageNameArray[indexPath.row])
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -84,8 +86,9 @@ class StampViewController: UIViewController,UICollectionViewDelegate,UICollectio
         return cellMargin
     }
     
+    //Segueの名前がToStampViewControllerのときStampnameViewControllerにimagenameをおく
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "ToStampnameVIewController" {
+        if segue.identifier == "ToStampnameViewController" {
             let controller = segue.destination as! StampnameViewController
             controller.imagename = sender as! String
         }

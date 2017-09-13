@@ -71,7 +71,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="eIB-DI-wNQ" id="Miv-d9-kqU"/>
-                        <segue destination="msI-3q-aCF" kind="show" identifier="ToStampnameVIewController" id="Zk5-QA-N72"/>
+                        <segue destination="msI-3q-aCF" kind="show" identifier="ToStampnameViewController" id="Zk5-QA-N72"/>
                         <segue destination="msI-3q-aCF" kind="show" id="FPK-Py-DUu"/>
                     </connections>
                 </viewController>

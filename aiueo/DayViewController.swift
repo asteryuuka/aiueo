@@ -8,32 +8,47 @@
 
 import UIKit
 import Floaty
+import RealmSwift
 
-class DayViewController: UIViewController, UITableViewDataSource {
+class DayViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    @IBOutlet var table:UITableView!
-
+    @IBOutlet var table: UITableView!
+    
+    var stampArray: [Stamp] = []
+    
+    var selectedStamp: Stamp?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         table.dataSource = self
         // Do any additional setup after loading the view.
-       
+        
+        //FloatyにstampArrayを読み込む
+        let realm = try! Realm()
+        //stampArrayとrealm
+        stampArray = realm.objects(Stamp.self).map({$0})
+        
         let floaty = Floaty()
         floaty.paddingY = 55
-        floaty.addItem(title: "Hello, World!")
-        self.view.addSubview(floaty)
-        
+        for stamp in stampArray {
+            floaty.addItem(title: stamp.categoryName, handler: { (item) in
+                //Dayの時間のところにおけるようにする
+                self.selectedStamp = stamp
+                
+            })
+            self.view.addSubview(floaty)
+        }
     }
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DayTableCell") as! DayTableViewCell
-    
+        
         cell.label.text = String (indexPath.item)
-       
+        
         return cell
     }
     override func didReceiveMemoryWarning() {
@@ -58,14 +73,18 @@ class DayViewController: UIViewController, UITableViewDataSource {
         self.present(controller, animated: true, completion: nil)
     }
     
+    
+    func tableView(_ tableView: , didSelectRowAt indexPath: ) {
+        NSLog("",stampArray[indexPath.row])
+
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
