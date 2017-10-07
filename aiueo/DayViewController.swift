@@ -73,9 +73,9 @@ class DayViewController: UIViewController, UITableViewDataSource, UITableViewDel
         self.present(controller, animated: true, completion: nil)
     }
     
-    
-    func tableView(_ tableView: , didSelectRowAt indexPath: ) {
-        NSLog("",stampArray[indexPath.row])
+//    
+//    func tableView(_ tableView: , didSelectRowAt indexPath: ) {
+//        NSLog("",stampArray[indexPath.row])
 
     /*
      // MARK: - Navigation
