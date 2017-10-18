@@ -1,0 +1,6 @@
+framework module Pods_aiueoTests {
+  umbrella header "Pods-aiueoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

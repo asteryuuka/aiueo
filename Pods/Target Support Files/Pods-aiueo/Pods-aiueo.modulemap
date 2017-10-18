@@ -1,0 +1,6 @@
+framework module Pods_aiueo {
+  umbrella header "Pods-aiueo-umbrella.h"
+
+  export *
+  module * { export * }
+}
