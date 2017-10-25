@@ -10,6 +10,7 @@ import UIKit
 
 class StampViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
 
+    //Edit.storyboardに反映させる
     static func instantiate() -> UINavigationController {
         let controller = UIStoryboard(name: "Edit", bundle: nil).instantiateInitialViewController()
         as! UINavigationController

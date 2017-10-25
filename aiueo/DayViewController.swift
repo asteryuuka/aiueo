@@ -39,11 +39,11 @@ class DayViewController: UIViewController, UITableViewDataSource, UITableViewDel
             self.view.addSubview(floaty)
         }
     }
-    
+    //Cellの行数を決める
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
-    
+    //Tableviewの中にDayTableCellを置いて文字を入れられるようにする
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DayTableCell") as! DayTableViewCell
         
@@ -67,7 +67,7 @@ class DayViewController: UIViewController, UITableViewDataSource, UITableViewDel
     @IBAction func keisan() {
         
     }
-    
+  
     @IBAction func presentEdit() {
         let controller = StampViewController.instantiate()
         self.present(controller, animated: true, completion: nil)

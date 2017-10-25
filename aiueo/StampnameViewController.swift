@@ -22,7 +22,7 @@ class StampnameViewController: UIViewController{
      
       
         
-        //何も名前をつけていない時にダメと表示する
+        //何も名前をつけていない時に登録できないようにする
         if textField.text == "" {
             //Alert
             let alert = UIAlertController(title: "保存できません", message: "名前を入力して下さい", preferredStyle: .alert)

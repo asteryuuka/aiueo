@@ -12,13 +12,14 @@ class MonthViewController: UIViewController,UICollectionViewDelegate, UICollecti
 
     @IBOutlet var collectionView:UICollectionView!
    
-    
+    //Cellの間隔
     fileprivate let cellMargin: CGFloat = 9.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
        
+       //delegateとdataSourceの設定をしてかけるようにする
         collectionView.delegate = self
         collectionView.dataSource = self
     }
@@ -27,11 +28,12 @@ class MonthViewController: UIViewController,UICollectionViewDelegate, UICollecti
         super.viewWillAppear(animated)
     }
     
-   
+   //Cellのセクション
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     
+    //Cellの個数
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 31
     }
@@ -41,7 +43,7 @@ class MonthViewController: UIViewController,UICollectionViewDelegate, UICollecti
         // Dispose of any resources that can be recreated.
     }
 
-    
+    //MonthViewController
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
          let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MonthCollectionCell", for: indexPath) as! MonthCollectionViewCell
         cell.label.text = String (indexPath.item + 1)
@@ -52,17 +54,20 @@ class MonthViewController: UIViewController,UICollectionViewDelegate, UICollecti
    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let numberOfMargin: CGFloat = 8.0
+        
+        //Cellの横の間隔
+        let numberOfMargin: CGFloat = 6.0
+        //総数を1列7個で揃える 正方形にする
         let width: CGFloat = (collectionView.frame.size.width - cellMargin * numberOfMargin) / 7
         let height: CGFloat = width 
         return CGSize(width: width, height: height)
     }
-   
+   //行間
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         
         return cellMargin
     }
-    
+    //アイテム間
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         
         return cellMargin
