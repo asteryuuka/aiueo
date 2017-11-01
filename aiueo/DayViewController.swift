@@ -41,7 +41,8 @@ class DayViewController: UIViewController, UITableViewDataSource, UITableViewDel
     }
     //Cellの行数を決める
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 25
+
     }
     //Tableviewの中にDayTableCellを置いて文字を入れられるようにする
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
