@@ -14,15 +14,13 @@ class StampnameViewController: UIViewController{
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var textField: UITextField!
     
-    var imagename: String!
-    
+    var imageName: String!
+    var stampArray: [Stamp] = []
     
     @IBAction func kansei() {
         
-     
-      
-        
-        //何も名前をつけていない時に登録できないようにする
+    
+              //何も名前をつけていない時に登録できないようにする
         if textField.text == "" {
             //Alert
             let alert = UIAlertController(title: "保存できません", message: "名前を入力して下さい", preferredStyle: .alert)
@@ -43,6 +41,7 @@ class StampnameViewController: UIViewController{
             stamp.id = Stamp.lastId()
             stamp.categoryName = textField.text!
             stamp.stampImageName = "border.jpeg"
+            stamp.categoryImageName = imageName
             
             let realm = try! Realm()
             
@@ -54,12 +53,16 @@ class StampnameViewController: UIViewController{
             
             //Alert
             let alert = UIAlertController(title: "Success", message: "保存が完了しました", preferredStyle: .alert)
+            
             //OK
             alert.addAction(
                 UIAlertAction(title: "OK",
                               style:UIAlertActionStyle.default,
                               handler: { action in
                                 print("OKボタン押した")
+                                //ボタンが押された時の動作
+                                self.dismiss(animated: true, completion: nil)
+                                
                 }
                 )
             )
@@ -69,6 +72,8 @@ class StampnameViewController: UIViewController{
     
     
     override func viewDidLoad() {
+                
+
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
@@ -77,7 +82,7 @@ class StampnameViewController: UIViewController{
         super.viewWillAppear(animated)
         
         //imageViewの画像で選ばれたimagenameをUIImageに出す
-        imageView.image = UIImage(named: imagename)
+        imageView.image = UIImage(named: imageName)
     }
     
     

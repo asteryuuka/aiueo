@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import RealmSwift
+class StampViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UITableViewDataSource,UITableViewDelegate {
 
-class StampViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+    @IBOutlet var table: UITableView!
+    @IBOutlet var imageView: UIImageView!
+    var stampArray: [Stamp] = []
+
 
     //Edit.storyboardに反映させる
     static func instantiate() -> UINavigationController {
@@ -32,8 +37,12 @@ class StampViewController: UIViewController,UICollectionViewDelegate,UICollectio
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let realm = try! Realm()
+        stampArray = realm.objects(Stamp.self).map({$0})
 
         // Do any additional setup after loading the view.
+        table.delegate = self
+        table.dataSource = self
         collectionView.delegate = self
         collectionView.dataSource = self
     }
@@ -55,11 +64,11 @@ class StampViewController: UIViewController,UICollectionViewDelegate,UICollectio
         // Dispose of any resources that can be recreated.
     }
     
-   //StampCollectionCellにimageNameArrayに入れた画像が表示できるようにする
+      //StampCollectionCellにimageNameArrayに入れた画像が表示できるようにする
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StampCollectionCell", for: indexPath) as! StampCollectionViewCell
         
-        cell.stampImageView.image = UIImage(named: imageNameArray[indexPath.row])
+        cell.stampImageView.image = UIImage(named: imageNameArray[indexPath.item])
         
         return cell
     }
@@ -91,10 +100,23 @@ class StampViewController: UIViewController,UICollectionViewDelegate,UICollectio
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ToStampnameViewController" {
             let controller = segue.destination as! StampnameViewController
-            controller.imagename = sender as! String
+            controller.imageName = sender as! String
         }
     }
 
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return stampArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "StampTableCell") as! StampTableViewCell
+        
+        cell.label.text = stampArray[indexPath.row].categoryName
+        cell.stampImageView.image = UIImage(named: stampArray[indexPath.row].categoryImageName)
+        
+        return cell
+    }
+}
 
     /*
     // MARK: - Navigation
@@ -106,4 +128,4 @@ class StampViewController: UIViewController,UICollectionViewDelegate,UICollectio
     }
     */
 
-}
+

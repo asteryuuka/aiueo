@@ -31,7 +31,7 @@ class DayViewController: UIViewController, UITableViewDataSource, UITableViewDel
         let floaty = Floaty()
         floaty.paddingY = 55
         for stamp in stampArray {
-            floaty.addItem(title: stamp.categoryName, handler: { (item) in
+            floaty.addItem(stamp.categoryName, icon: UIImage(named: stamp.categoryImageName)! , handler: { (item) in
                 //Dayの時間のところにおけるようにする
                 self.selectedStamp = stamp
                 

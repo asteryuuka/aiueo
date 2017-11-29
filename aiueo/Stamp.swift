@@ -14,6 +14,7 @@ class Stamp: Object {
     dynamic var id: Int = 0
     dynamic var stampImageName: String = ""
     dynamic var categoryName: String = ""
+    dynamic var categoryImageName: String = ""
     
     override static func primaryKey() -> String{
         
