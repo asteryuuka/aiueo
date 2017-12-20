@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		386ACB84F9FAAFF0D9355E88 /* Pods_aiueo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C3285027B64D228E7EBEA5B /* Pods_aiueo.framework */; };
-		89B0B5083DD4007F97C6B7B6 /* Pods_aiueoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AA3A8949F21F00A568E343 /* Pods_aiueoUITests.framework */; };
+		412AB8B2E7B2C4DE36F9B95E /* Pods_aiueo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D130C1B123E65B35B9D2395 /* Pods_aiueo.framework */; };
+		8E2F7DE957EDF81FDCC704BA /* Pods_aiueoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA33110B1984A9E58AB561D3 /* Pods_aiueoTests.framework */; };
 		B20CBF761F5FFFB500B1F81D /* Stamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20CBF751F5FFFB500B1F81D /* Stamp.swift */; };
 		B20CBF791F600C5E00B1F81D /* StampDemo2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B20CBF771F600C5E00B1F81D /* StampDemo2.jpg */; };
 		B20CBF7A1F600C5E00B1F81D /* StampDemo3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B20CBF781F600C5E00B1F81D /* StampDemo3.jpeg */; };
@@ -31,7 +31,7 @@
 		B2BF4B521EF14679002FC00C /* aiueoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BF4B511EF14679002FC00C /* aiueoTests.swift */; };
 		B2BF4B5D1EF14679002FC00C /* aiueoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BF4B5C1EF14679002FC00C /* aiueoUITests.swift */; };
 		B2BF4B6B1EF14B66002FC00C /* Edit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2BF4B6A1EF14B66002FC00C /* Edit.storyboard */; };
-		E1082C41E6F35CD600F768F8 /* Pods_aiueoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99353B95DF0D582234946679 /* Pods_aiueoTests.framework */; };
+		D5E3EC7ED54188643D09F15F /* Pods_aiueoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ECC2BE77F7E97A160888CEA /* Pods_aiueoUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,12 +52,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1FD441F23532925FD425ACCB /* Pods-aiueo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aiueo.release.xcconfig"; path = "Pods/Target Support Files/Pods-aiueo/Pods-aiueo.release.xcconfig"; sourceTree = "<group>"; };
-		24AA3A8949F21F00A568E343 /* Pods_aiueoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aiueoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C3285027B64D228E7EBEA5B /* Pods_aiueo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aiueo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		73BDDD228F8A18A67FAF9C8B /* Pods-aiueo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aiueo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-aiueo/Pods-aiueo.debug.xcconfig"; sourceTree = "<group>"; };
-		99353B95DF0D582234946679 /* Pods_aiueoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aiueoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1163CC26925CF019B5EFC86 /* Pods-aiueoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aiueoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-aiueoUITests/Pods-aiueoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		132B932A410889BC672F50B9 /* Pods-aiueoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aiueoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-aiueoTests/Pods-aiueoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1D130C1B123E65B35B9D2395 /* Pods_aiueo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aiueo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ECC2BE77F7E97A160888CEA /* Pods_aiueoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aiueoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58F80DC81BA29460891B38CC /* Pods-aiueo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aiueo.release.xcconfig"; path = "Pods/Target Support Files/Pods-aiueo/Pods-aiueo.release.xcconfig"; sourceTree = "<group>"; };
+		6FBAF45FB1889A3AF9DBB73A /* Pods-aiueoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aiueoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-aiueoUITests/Pods-aiueoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B20CBF751F5FFFB500B1F81D /* Stamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stamp.swift; sourceTree = "<group>"; };
 		B20CBF771F600C5E00B1F81D /* StampDemo2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = StampDemo2.jpg; sourceTree = "<group>"; };
 		B20CBF781F600C5E00B1F81D /* StampDemo3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = StampDemo3.jpeg; sourceTree = "<group>"; };
@@ -86,9 +85,10 @@
 		B2BF4B5C1EF14679002FC00C /* aiueoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aiueoUITests.swift; sourceTree = "<group>"; };
 		B2BF4B5E1EF14679002FC00C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2BF4B6A1EF14B66002FC00C /* Edit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Edit.storyboard; sourceTree = "<group>"; };
-		BDECFE908F5D5C3225C8A994 /* Pods-aiueoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aiueoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-aiueoUITests/Pods-aiueoUITests.release.xcconfig"; sourceTree = "<group>"; };
-		EB63D3970DEB7C1512A3916A /* Pods-aiueoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aiueoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-aiueoTests/Pods-aiueoTests.release.xcconfig"; sourceTree = "<group>"; };
-		FB3782AAB96B242E7292528F /* Pods-aiueoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aiueoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-aiueoTests/Pods-aiueoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B3D6A63B7294FA9B7BDC12D2 /* Pods-aiueoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aiueoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-aiueoTests/Pods-aiueoTests.release.xcconfig"; sourceTree = "<group>"; };
+		CA33110B1984A9E58AB561D3 /* Pods_aiueoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aiueoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E99A46F8156B5C48A27EC8AF /* Pods-aiueoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aiueoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-aiueoUITests/Pods-aiueoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F9BAF64531770244A7F1408B /* Pods-aiueo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aiueo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-aiueo/Pods-aiueo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				386ACB84F9FAAFF0D9355E88 /* Pods_aiueo.framework in Frameworks */,
+				412AB8B2E7B2C4DE36F9B95E /* Pods_aiueo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1082C41E6F35CD600F768F8 /* Pods_aiueoTests.framework in Frameworks */,
+				8E2F7DE957EDF81FDCC704BA /* Pods_aiueoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,22 +112,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89B0B5083DD4007F97C6B7B6 /* Pods_aiueoUITests.framework in Frameworks */,
+				D5E3EC7ED54188643D09F15F /* Pods_aiueoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02B5506DCF3E2444DB3A9926 /* Pods */ = {
+		1C7F96C383B570C7197983A2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				73BDDD228F8A18A67FAF9C8B /* Pods-aiueo.debug.xcconfig */,
-				1FD441F23532925FD425ACCB /* Pods-aiueo.release.xcconfig */,
-				FB3782AAB96B242E7292528F /* Pods-aiueoTests.debug.xcconfig */,
-				EB63D3970DEB7C1512A3916A /* Pods-aiueoTests.release.xcconfig */,
-				B1163CC26925CF019B5EFC86 /* Pods-aiueoUITests.debug.xcconfig */,
-				BDECFE908F5D5C3225C8A994 /* Pods-aiueoUITests.release.xcconfig */,
+				F9BAF64531770244A7F1408B /* Pods-aiueo.debug.xcconfig */,
+				58F80DC81BA29460891B38CC /* Pods-aiueo.release.xcconfig */,
+				132B932A410889BC672F50B9 /* Pods-aiueoTests.debug.xcconfig */,
+				B3D6A63B7294FA9B7BDC12D2 /* Pods-aiueoTests.release.xcconfig */,
+				6FBAF45FB1889A3AF9DBB73A /* Pods-aiueoUITests.debug.xcconfig */,
+				E99A46F8156B5C48A27EC8AF /* Pods-aiueoUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -135,9 +135,9 @@
 		6FCF204133C3552AEA17701B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6C3285027B64D228E7EBEA5B /* Pods_aiueo.framework */,
-				99353B95DF0D582234946679 /* Pods_aiueoTests.framework */,
-				24AA3A8949F21F00A568E343 /* Pods_aiueoUITests.framework */,
+				1D130C1B123E65B35B9D2395 /* Pods_aiueo.framework */,
+				CA33110B1984A9E58AB561D3 /* Pods_aiueoTests.framework */,
+				3ECC2BE77F7E97A160888CEA /* Pods_aiueoUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -149,8 +149,8 @@
 				B2BF4B501EF14679002FC00C /* aiueoTests */,
 				B2BF4B5B1EF14679002FC00C /* aiueoUITests */,
 				B2BF4B3A1EF14679002FC00C /* Products */,
-				02B5506DCF3E2444DB3A9926 /* Pods */,
 				6FCF204133C3552AEA17701B /* Frameworks */,
+				1C7F96C383B570C7197983A2 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -217,12 +217,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2BF4B611EF14679002FC00C /* Build configuration list for PBXNativeTarget "aiueo" */;
 			buildPhases = (
-				BCA6FA900E0A193D0007CB38 /* [CP] Check Pods Manifest.lock */,
+				EC3CF56FA09671DE5FD90F6D /* [CP] Check Pods Manifest.lock */,
 				B2BF4B351EF14679002FC00C /* Sources */,
 				B2BF4B361EF14679002FC00C /* Frameworks */,
 				B2BF4B371EF14679002FC00C /* Resources */,
-				1D71AA211491FA55A30FD680 /* [CP] Embed Pods Frameworks */,
-				A5B16EEA9802C6BEE98483A7 /* [CP] Copy Pods Resources */,
+				D79C785B25CADD5392FDA46F /* [CP] Embed Pods Frameworks */,
+				D4FBE8AD7D9BB5BE0C2EDE7E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -362,28 +362,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-aiueoUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		1D71AA211491FA55A30FD680 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aiueo/Pods-aiueo-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		235D35B6952C9C32C4B6BC39 /* [CP] Check Pods Manifest.lock */ = {
@@ -392,13 +380,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-aiueoTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		37B24902B753D3850105BFCC /* [CP] Copy Pods Resources */ = {
@@ -446,7 +437,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aiueoUITests/Pods-aiueoUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A5B16EEA9802C6BEE98483A7 /* [CP] Copy Pods Resources */ = {
+		D4FBE8AD7D9BB5BE0C2EDE7E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -461,19 +452,44 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aiueo/Pods-aiueo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BCA6FA900E0A193D0007CB38 /* [CP] Check Pods Manifest.lock */ = {
+		D79C785B25CADD5392FDA46F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-aiueo/Pods-aiueo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Floaty/Floaty.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Floaty.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aiueo/Pods-aiueo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC3CF56FA09671DE5FD90F6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-aiueo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F8818810D95B9ED2223CDD87 /* [CP] Embed Pods Frameworks */ = {
@@ -660,7 +676,7 @@
 		};
 		B2BF4B621EF14679002FC00C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73BDDD228F8A18A67FAF9C8B /* Pods-aiueo.debug.xcconfig */;
+			baseConfigurationReference = F9BAF64531770244A7F1408B /* Pods-aiueo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DAYR4G67YX;
@@ -675,7 +691,7 @@
 		};
 		B2BF4B631EF14679002FC00C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FD441F23532925FD425ACCB /* Pods-aiueo.release.xcconfig */;
+			baseConfigurationReference = 58F80DC81BA29460891B38CC /* Pods-aiueo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DAYR4G67YX;
@@ -690,7 +706,7 @@
 		};
 		B2BF4B651EF14679002FC00C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB3782AAB96B242E7292528F /* Pods-aiueoTests.debug.xcconfig */;
+			baseConfigurationReference = 132B932A410889BC672F50B9 /* Pods-aiueoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -706,7 +722,7 @@
 		};
 		B2BF4B661EF14679002FC00C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB63D3970DEB7C1512A3916A /* Pods-aiueoTests.release.xcconfig */;
+			baseConfigurationReference = B3D6A63B7294FA9B7BDC12D2 /* Pods-aiueoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -722,7 +738,7 @@
 		};
 		B2BF4B681EF14679002FC00C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1163CC26925CF019B5EFC86 /* Pods-aiueoUITests.debug.xcconfig */;
+			baseConfigurationReference = 6FBAF45FB1889A3AF9DBB73A /* Pods-aiueoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = DAYR4G67YX;
@@ -737,7 +753,7 @@
 		};
 		B2BF4B691EF14679002FC00C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BDECFE908F5D5C3225C8A994 /* Pods-aiueoUITests.release.xcconfig */;
+			baseConfigurationReference = E99A46F8156B5C48A27EC8AF /* Pods-aiueoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = DAYR4G67YX;

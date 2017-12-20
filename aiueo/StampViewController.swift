@@ -10,10 +10,12 @@ import UIKit
 import RealmSwift
 class StampViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UITableViewDataSource,UITableViewDelegate {
 
+  
+    
     @IBOutlet var table: UITableView!
     @IBOutlet var imageView: UIImageView!
     var stampArray: [Stamp] = []
-
+    
 
     //Edit.storyboardに反映させる
     static func instantiate() -> UINavigationController {
@@ -59,6 +61,23 @@ class StampViewController: UIViewController,UICollectionViewDelegate,UICollectio
         return imageNameArray.count
     }
 
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+           
+        // stampArray.remove(at: indexPath.row)   なんでいらないか考える
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            
+        //データ上から消す
+            let realm = try! Realm()
+            
+            try! realm.write {
+                
+                //realm.add(stamp)
+                realm.delete(stampArray[indexPath.row])//indecPathは自分が選択したもの
+                
+            }
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -127,5 +146,6 @@ class StampViewController: UIViewController,UICollectionViewDelegate,UICollectio
         // Pass the selected object to the new view controller.
     }
     */
+
 
 

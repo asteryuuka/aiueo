@@ -1,20 +1,20 @@
 PODS:
-  - Floaty (3.0.0)
-  - Realm (2.7.0):
-    - Realm/Headers (= 2.7.0)
-  - Realm/Headers (2.7.0)
-  - RealmSwift (2.7.0):
-    - Realm (= 2.7.0)
+  - Floaty (4.0.0)
+  - Realm (3.0.2):
+    - Realm/Headers (= 3.0.2)
+  - Realm/Headers (3.0.2)
+  - RealmSwift (3.0.2):
+    - Realm (= 3.0.2)
 
 DEPENDENCIES:
   - Floaty
   - RealmSwift
 
 SPEC CHECKSUMS:
-  Floaty: d1be5d323094f0de422bb615452d00ba26ac74dd
-  Realm: 07e5d3a9e0e41d65fd5f9f05150ed6295d0f093b
-  RealmSwift: 6d06425d3900c86473c4f323bf6949b43fca22bc
+  Floaty: 4f88811bbf08521807f42355db6a9c0db85d5d78
+  Realm: 6f23fd1f178a09342eac21bfa7c2bf4312a7a180
+  RealmSwift: 695393add1b8f9d5fa75dd16e6355cf3935f71e2
 
 PODFILE CHECKSUM: 0a3ad0d877e8ff24d84814495ce57a0ac4ff9ada
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.3.1
