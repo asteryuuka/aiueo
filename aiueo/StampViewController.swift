@@ -64,8 +64,7 @@ class StampViewController: UIViewController,UICollectionViewDelegate,UICollectio
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
            
-        // stampArray.remove(at: indexPath.row)   なんでいらないか考える
-            tableView.deleteRows(at: [indexPath], with: .fade)
+        // stampArray.remove(at: indexPath.row）←stampArrayからしかデータが消えない
             
         //データ上から消す
             let realm = try! Realm()
@@ -76,6 +75,9 @@ class StampViewController: UIViewController,UICollectionViewDelegate,UICollectio
                 realm.delete(stampArray[indexPath.row])//indecPathは自分が選択したもの
                 
             }
+            stampArray.remove(at: indexPath.row) //←stampArrayを更新
+            tableView.deleteRows(at: [indexPath], with: .fade)//cellを消す
+
         }
     }
     override func didReceiveMemoryWarning() {
