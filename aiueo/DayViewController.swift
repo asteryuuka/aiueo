@@ -34,6 +34,7 @@ class DayViewController: UIViewController, UITableViewDataSource, UITableViewDel
             floaty.addItem(stamp.categoryName, icon: UIImage(named: stamp.categoryImageName)! , handler: { (item) in
                 //Dayの時間のところにおけるようにする
                 self.selectedStamp = stamp
+                print(stamp.categoryName)
                 
             })
             self.view.addSubview(floaty)
