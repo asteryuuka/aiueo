@@ -15,12 +15,15 @@ class DayViewController: UIViewController, UITableViewDataSource, UITableViewDel
     @IBOutlet var table: UITableView!
     
     var stampArray: [Stamp] = []
-    
     var selectedStamp: Stamp?
+    var isSelected: Bool = false //startTimeが設定されたらtrueになるため
+    var startTime: Int = 0
+    var endTime: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         table.dataSource = self
+        table.delegate = self
         // Do any additional setup after loading the view.
         
         //FloatyにstampArrayを読み込む
@@ -50,20 +53,33 @@ class DayViewController: UIViewController, UITableViewDataSource, UITableViewDel
         let cell = tableView.dequeueReusableCell(withIdentifier: "DayTableCell") as! DayTableViewCell
         
         cell.label.text = String (indexPath.item)
+         //もしindexPath.rowがstartTimeより大きくてendTimeより小さかったら画像を表示
         
+        cell.stampImageView.image = UIImage(named: "StampDemo.jpeg")
         return cell
+    }
+    //cellを押した時
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //選択したcellを取得、stampImageViewを使うためにDayTableViewCell
+        let cell = tableView.cellForRow(at: indexPath) as! DayTableViewCell
+        
+        if isSelected == false {
+            isSelected = true
+            startTime = indexPath.row
+            print("startTime: \(startTime)")
+            //選択したセルに画像を反映
+            cell.stampImageView.image = UIImage(named: "StampDemo.jpeg")
+        }else{
+            endTime = indexPath.row
+            print("endTime: \(endTime)")
+            //スタートとエンドの間の画像を設定
+            tableView.reloadData()
+        }
+
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    @IBAction func Month() {
-        
-    }
-    
-    @IBAction func Year() {
-        
     }
     
     @IBAction func keisan() {

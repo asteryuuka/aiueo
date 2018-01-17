@@ -11,7 +11,8 @@ import UIKit
 class DayTableViewCell: UITableViewCell {
 
   //Cellのラベル
-    @IBOutlet var label:UILabel!
+    @IBOutlet var label: UILabel!
+    @IBOutlet var stampImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
