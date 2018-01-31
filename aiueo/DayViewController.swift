@@ -57,7 +57,7 @@ class DayViewController: UIViewController, UITableViewDataSource, UITableViewDel
         cell.label.text = String (indexPath.item)
          //もしindexPath.rowがstartTimeより大きくてendTimeより小さかったら画像を表示
         if indexPath.row >= startTime && indexPath.row <= endTime{
-            cell.stampImageView.image = UIImage(named: (selectedStamp?.stampImageName)!)
+            cell.stampImageView.image = UIImage(named: selectedStamp!.categoryImageName)
         }
       
         return cell
@@ -72,7 +72,7 @@ class DayViewController: UIViewController, UITableViewDataSource, UITableViewDel
             startTime = indexPath.row
             print("startTime: \(startTime)")
             //選択したセルに画像を反映
-            cell.stampImageView.image = UIImage(named: (selectedStamp?.stampImageName)!)
+            cell.stampImageView.image = UIImage(named: selectedStamp!.categoryImageName)
         }else{
             isSelected = false
             endTime = indexPath.row
