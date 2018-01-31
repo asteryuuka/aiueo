@@ -17,15 +17,17 @@ class DayViewController: UIViewController, UITableViewDataSource, UITableViewDel
     var stampArray: [Stamp] = []
     var selectedStamp: Stamp?
     var isSelected: Bool = false //startTimeが設定されたらtrueになるため
-    var startTime: Int = 0
-    var endTime: Int = 0
+    var startTime: Int = -1
+    var endTime: Int = -1
     
     override func viewDidLoad() {
         super.viewDidLoad()
         table.dataSource = self
         table.delegate = self
-        // Do any additional setup after loading the view.
-        
+        // Do any additional setup after loading the view
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         //FloatyにstampArrayを読み込む
         let realm = try! Realm()
         //stampArrayとrealm
@@ -54,8 +56,10 @@ class DayViewController: UIViewController, UITableViewDataSource, UITableViewDel
         
         cell.label.text = String (indexPath.item)
          //もしindexPath.rowがstartTimeより大きくてendTimeより小さかったら画像を表示
-        
-        cell.stampImageView.image = UIImage(named: "StampDemo.jpeg")
+        if indexPath.row >= startTime && indexPath.row <= endTime{
+            cell.stampImageView.image = UIImage(named: (selectedStamp?.stampImageName)!)
+        }
+      
         return cell
     }
     //cellを押した時
@@ -68,15 +72,17 @@ class DayViewController: UIViewController, UITableViewDataSource, UITableViewDel
             startTime = indexPath.row
             print("startTime: \(startTime)")
             //選択したセルに画像を反映
-            cell.stampImageView.image = UIImage(named: "StampDemo.jpeg")
+            cell.stampImageView.image = UIImage(named: (selectedStamp?.stampImageName)!)
         }else{
+            isSelected = false
             endTime = indexPath.row
             print("endTime: \(endTime)")
             //スタートとエンドの間の画像を設定
             tableView.reloadData()
         }
-
     }
+    //reloadDataを使うと違う範囲を選択した時に前の選択が消えるので、for文を使う
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
