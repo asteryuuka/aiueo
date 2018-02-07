@@ -25,6 +25,9 @@ class DayViewController: UIViewController, UITableViewDataSource, UITableViewDel
         table.dataSource = self
         table.delegate = self
         // Do any additional setup after loading the view
+        let realm = try! Realm()
+        print(realm.objects(Schedule.self))
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -77,6 +80,19 @@ class DayViewController: UIViewController, UITableViewDataSource, UITableViewDel
             isSelected = false
             endTime = indexPath.row
             print("endTime: \(endTime)")
+        
+            let schedule: Schedule = Schedule()
+            schedule.startIndex = startTime
+            schedule.endIndex = endTime
+            schedule.stamp = selectedStamp
+            
+            let realm = try! Realm()
+            
+            try! realm.write {
+                
+                realm.add(schedule)
+        
+            }
             //スタートとエンドの間の画像を設定
             tableView.reloadData()
         }
