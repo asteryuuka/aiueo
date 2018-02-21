@@ -27,6 +27,7 @@ class DayViewController: UIViewController, UITableViewDataSource, UITableViewDel
         // Do any additional setup after loading the view
         let realm = try! Realm()
         print(realm.objects(Schedule.self))
+        let schedules = realm.objects(Schedule.self).map{$0}
         
     }
     

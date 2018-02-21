@@ -25,6 +25,8 @@
 		B26304891EF15240007CED22 /* MonthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26304881EF15240007CED22 /* MonthViewController.swift */; };
 		B263048B1EF15249007CED22 /* YearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B263048A1EF15249007CED22 /* YearViewController.swift */; };
 		B29360CD1FC584EB009DF0E9 /* StampTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29360CC1FC584EB009DF0E9 /* StampTableViewCell.swift */; };
+		B2ADFFCF203D7F0100901768 /* note.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B2ADFFCE203D7F0100901768 /* note.jpeg */; };
+		B2ADFFD1203D7F1300901768 /* school.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B2ADFFD0203D7F1300901768 /* school.jpeg */; };
 		B2BF4B3D1EF14679002FC00C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BF4B3C1EF14679002FC00C /* AppDelegate.swift */; };
 		B2BF4B3F1EF14679002FC00C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BF4B3E1EF14679002FC00C /* ViewController.swift */; };
 		B2BF4B421EF14679002FC00C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2BF4B401EF14679002FC00C /* Main.storyboard */; };
@@ -75,6 +77,8 @@
 		B26304881EF15240007CED22 /* MonthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthViewController.swift; sourceTree = "<group>"; };
 		B263048A1EF15249007CED22 /* YearViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearViewController.swift; sourceTree = "<group>"; };
 		B29360CC1FC584EB009DF0E9 /* StampTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StampTableViewCell.swift; sourceTree = "<group>"; };
+		B2ADFFCE203D7F0100901768 /* note.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = note.jpeg; sourceTree = "<group>"; };
+		B2ADFFD0203D7F1300901768 /* school.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = school.jpeg; sourceTree = "<group>"; };
 		B2BF4B391EF14679002FC00C /* aiueo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aiueo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BF4B3C1EF14679002FC00C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2BF4B3E1EF14679002FC00C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -188,6 +192,8 @@
 				B20CBF7B1F600C6800B1F81D /* StampDemo.jpeg */,
 				B20CBF771F600C5E00B1F81D /* StampDemo2.jpg */,
 				B20CBF781F600C5E00B1F81D /* StampDemo3.jpeg */,
+				B2ADFFCE203D7F0100901768 /* note.jpeg */,
+				B2ADFFD0203D7F1300901768 /* school.jpeg */,
 				B2BF4B431EF14679002FC00C /* Assets.xcassets */,
 				B2BF4B451EF14679002FC00C /* LaunchScreen.storyboard */,
 				B2BF4B481EF14679002FC00C /* Info.plist */,
@@ -338,6 +344,8 @@
 				B20CBF7A1F600C5E00B1F81D /* StampDemo3.jpeg in Resources */,
 				B20CBF7C1F600C6800B1F81D /* StampDemo.jpeg in Resources */,
 				B2BF4B471EF14679002FC00C /* LaunchScreen.storyboard in Resources */,
+				B2ADFFD1203D7F1300901768 /* school.jpeg in Resources */,
+				B2ADFFCF203D7F0100901768 /* note.jpeg in Resources */,
 				B2BF4B6B1EF14B66002FC00C /* Edit.storyboard in Resources */,
 				B2BF4B441EF14679002FC00C /* Assets.xcassets in Resources */,
 				B20CBF791F600C5E00B1F81D /* StampDemo2.jpg in Resources */,

@@ -27,7 +27,7 @@ class StampViewController: UIViewController,UICollectionViewDelegate,UICollectio
     
     @IBOutlet var collectionView: UICollectionView!
     
-    let imageNameArray:[String] = ["StampDemo.jpeg","StampDemo2.jpg","StampDemo3.jpeg"]
+    let imageNameArray:[String] = ["StampDemo.jpeg","StampDemo2.jpg","StampDemo3.jpeg","note.jpeg","school.jpeg"]
     
     
     @IBAction func Back() {
