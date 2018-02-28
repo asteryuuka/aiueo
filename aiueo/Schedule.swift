@@ -11,7 +11,8 @@ class Schedule: Object{
     dynamic var startIndex: Int = 0
     dynamic var endIndex: Int = 0
     dynamic var stamp: Stamp?
+    dynamic var date: Date?
+ 
+ 
     
-    
-    //なんのスタンプがどこに配置されてたかを記憶する
 }

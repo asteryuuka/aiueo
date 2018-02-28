@@ -20,15 +20,27 @@ class DayViewController: UIViewController, UITableViewDataSource, UITableViewDel
     var startTime: Int = -1
     var endTime: Int = -1
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         table.dataSource = self
         table.delegate = self
         // Do any additional setup after loading the view
+
+        
+    }
+    
+    override func viewDidLayoutSubviews() {
         let realm = try! Realm()
         print(realm.objects(Schedule.self))
         let schedules = realm.objects(Schedule.self).map{$0}
-        
+        for schedule in schedules {
+            for i in schedule.startIndex...schedule.endIndex {
+                let indexPath = IndexPath(row: i, section: 0)
+                let cell = table.cellForRow(at: indexPath) as! DayTableViewCell
+                cell.stampImageView.image = UIImage(named: schedule.stamp!.categoryImageName)
+            }
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -59,10 +71,7 @@ class DayViewController: UIViewController, UITableViewDataSource, UITableViewDel
         let cell = tableView.dequeueReusableCell(withIdentifier: "DayTableCell") as! DayTableViewCell
         
         cell.label.text = String (indexPath.item)
-         //もしindexPath.rowがstartTimeより大きくてendTimeより小さかったら画像を表示
-        if indexPath.row >= startTime && indexPath.row <= endTime{
-            cell.stampImageView.image = UIImage(named: selectedStamp!.categoryImageName)
-        }
+        
       
         return cell
     }
@@ -70,7 +79,7 @@ class DayViewController: UIViewController, UITableViewDataSource, UITableViewDel
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //選択したcellを取得、stampImageViewを使うためにDayTableViewCell
         let cell = tableView.cellForRow(at: indexPath) as! DayTableViewCell
-        
+        print(indexPath)
         if isSelected == false {
             isSelected = true
             startTime = indexPath.row
@@ -86,6 +95,7 @@ class DayViewController: UIViewController, UITableViewDataSource, UITableViewDel
             schedule.startIndex = startTime
             schedule.endIndex = endTime
             schedule.stamp = selectedStamp
+            schedule.date = Date()
             
             let realm = try! Realm()
             
@@ -95,7 +105,15 @@ class DayViewController: UIViewController, UITableViewDataSource, UITableViewDel
         
             }
             //スタートとエンドの間の画像を設定
-            tableView.reloadData()
+           // tableView.reloadData()
+            for i in startTime...endTime {
+                let indexPath = IndexPath(row: i, section: 0)
+                let cell = tableView.cellForRow(at: indexPath) as! DayTableViewCell
+                cell.stampImageView.image = UIImage(named: selectedStamp!.categoryImageName)
+            }
+           
+            
+            
         }
     }
     //reloadDataを使うと違う範囲を選択した時に前の選択が消えるので、for文を使う
@@ -105,9 +123,8 @@ class DayViewController: UIViewController, UITableViewDataSource, UITableViewDel
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func keisan() {
-        
-    }
+    
+    
   
     @IBAction func presentEdit() {
         let controller = StampViewController.instantiate()

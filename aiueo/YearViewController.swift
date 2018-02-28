@@ -67,19 +67,7 @@ class YearViewController: UIViewController, UICollectionViewDataSource, UICollec
         return cellMargin
     }
 
-    
-    @IBAction func Week() {
-        self.navigationController?.popViewController(animated: true)
-
-    }
-    
-    @IBAction func Month() {
-        self.navigationController?.popViewController(animated: true)
-
-    }
-    
-    @IBAction func keisan() {
-     
+  
     //月を選択したら選択したMonthに移動する
     }
     
@@ -94,4 +82,4 @@ class YearViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     */
 
-}
+

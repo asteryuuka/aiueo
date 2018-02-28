@@ -74,17 +74,7 @@ class MonthViewController: UIViewController,UICollectionViewDelegate, UICollecti
     }
 
     
-    @IBAction func Week() {
-        self.navigationController?.popViewController(animated: true)
-    }
-    
-    @IBAction func Year() {
-        
-    }
-    
-    @IBAction func keisan() {
-        
-    }
+   
 
     //日付を選択したら選択したDayに移動する
     

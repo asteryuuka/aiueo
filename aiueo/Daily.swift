@@ -9,7 +9,7 @@ import RealmSwift
 
 
 class Daily: Object{
-    dynamic var schedule: Int = 0 
+    dynamic var schedule: Int = 0
     dynamic var date: Date?
     
     //schedule.swiftで記憶したスタンプごとの情報を日にちごとにまとめる
